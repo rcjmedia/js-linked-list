@@ -73,26 +73,26 @@ function linkedListGenerator(){
   
     const insert = (val, index) => { //takes two arguments, a value and an index
       let prevNode = get(index-1);
-      console.log("prevNode: ",prevNode);
+      // console.log("prevNode: ",prevNode);
       let targetNode = get(index);
-      console.log("targetNode: ",targetNode);
+      // console.log("targetNode: ",targetNode);
       let newNode = { value: val, next: null };
-      console.log("newNode: ",newNode);
+      // console.log("newNode: ",newNode);
   
       if (!targetNode) {
         return false;
       } 
       else if (!prevNode) {
         newNode.next = head;
-        console.log("newNode: ",newNode.next);
+        // console.log("newNode: ",newNode.next);
         head = newNode;
-        console.log("head: ",head);
+        // console.log("head: ",head);
       } 
       else {
         newNode.next = targetNode;
-        console.log("newNode.next: ",newNode.next);
+        // console.log("newNode.next: ",newNode.next);
         prevNode.next = newNode;
-        console.log("prevNode: ",prevNode.next);
+        // console.log("prevNode: ",prevNode.next);
       }
     }
 
