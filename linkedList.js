@@ -94,6 +94,24 @@ function linkedListGenerator(){
         prevNode.next = newNode;
         // console.log("prevNode: ",prevNode.next);
       }
+
+      /////////////////////////DEBUG//////////////////
+      // if (!targetNode) {
+      //   return false;
+      // } 
+      // else if (!prevNode) {
+      //   targetNode.next = newNode;
+      //   console.log(targetNode);
+      //   // head = newNode;
+      //   // console.log("head: ",head);
+      // } 
+      // else {
+      //   targetNode.next = newNode;
+      //   // console.log("newNode.next: ",newNode.next);
+      //   prevNode.next = null;
+      //   // console.log("prevNode: ",prevNode.next);
+      // }
+      /////////////////////////DEBUG//////////////////
     }
 
     return {
